@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+
+			  // Store hash
+			  var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+		</script>
+        <style>
+        body{
+			background-color: rgb(240, 247, 210);
+            color: rgb(49, 59, 48);
+			font-family: "Helvetica", sans-serif;
+        }
+        h1{
+            color: #91465A;
+			text-align: center;
+			/*rgb(181, 87, 113)*/
+        }
+        h2{
+            color: rgb(173, 54, 54);
+        }
+		.page-title{
+			margin: 20px 75px 20px 75px;
+			padding: 50px 50px 50px 50px;
+			background-color: #a5c9a5;
+		}
+		.content{
+			margin: 25px 75px 75px 75px;
+			padding: 25px 75px 50px 75px;
+			background-color: #F5F5F5;
+		}
+		#content-list{
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+		}
+		.recipe{
+			margin-bottom: 50px;
+		}
+        #recipe-1{
+            color: rgb(158, 97, 97);
+        }
+        #recipe-2{
+            color: rgb(158, 97, 97);
+        }
+        #recipe-3{
+            color: rgb(158, 97, 97);
+        }
+		td{
+			padding-right: 15px;
+		}
+		a{
+			text-decoration: none;
+		}
+        </style>
+    </head>
+    <body>
+       <div class = "page-title">
+        <h1>Nurani's Recipe Book</h1>
+		</div>
+		
+		<div class = "content">
+		<div id = "content-list">
+        <h2>Contents:</h2>
+        <ol>
+            <li><a href="#recipe-1">Dalgona Coffee</a></li>
+            <li><a href="#recipe-2">Pancake</a></li>
+            <li><a href="#recipe-3">Dumplings</a></li>
+        </ol>
+		</div>
+        <div class = "recipe">
+        <h2 id="recipe-1">Dalgona Coffee</h2>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Dalgona_coffee.jpg" alt = "Coffee" width = "250">
+        
+        <ul>
+            <li>Time: 5 mins</li>
+            <li>Serves: 1 serving</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>granulated sugar</td>
+                    <td>2 tbsp.</td>
+                </tr>
+                <tr>
+                    <td>instant coffee</td>
+                    <td>2 tbsp.</td>
+                </tr>
+                <tr>
+                    <td>cold water</td>
+                    <td>2 tbsp.</td>
+                </tr>
+                <tr>
+                    <td>ice</td>
+                    <td>as desired</td>
+                </tr>
+                <tr>
+                    <td>milk</td>
+                    <td>as desired</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p class = "steps"><strong>Step 1:</strong> In a medium bowl, combine sugar, coffee, and water. Vigorously whisk until mixture turns silky smooth and shiny, then continue whisking until it thickens and holds its lofty, foamy shape.
+</p>
+        <p class = "steps"><strong>Step 2:</strong> Fill a glass most of the way full with ice and milk, then dollop and swirl the whipped coffee mixture on top, mixing before drinking, if desired.</p>
+        
+        
+    <p><em>Source: <a target = "_blank" href="https://www.delish.com/cooking/recipe-ideas/a32072159/dalgona-coffee-recipe/">
+Dalgona Coffee</a></em></p>
+	</div>
+    
+	<div class = "recipe">
+    <h2 id = "recipe-2">Pancake</h2>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/4/40/Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg" alt = "Pancake" width = "250">
+    
+    <ul>
+        <li>Time: 20 minutes</li>
+        <li>Serves: 8 servings</li>
+    </ul>
+    <table>
+        <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>all-purpose flour</td>
+                <td>1 1/2 cups</td>
+            </tr>
+            <tr>
+                <td>baking powder</td>
+                <td>3 1/2 tsp.</td>
+            </tr>
+            <tr>
+                <td>salt</td>
+                <td>1 tsp.</td>
+            </tr>
+            <tr>
+                <td>white sugar</td>
+                <td>1 tbsp.</td>
+            </tr>
+            <tr>
+                <td>milk</td>
+                <td>1 1/4 cups</td>
+            </tr>
+            <tr>
+                <td>egg</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>butter; melted</td>
+                <td>3 tbsp.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p class = "steps"><strong>Step 1: </strong> In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.</p>
+    <p class = "steps"><strong>Step 2: </strong>Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.</p>
+    
+    <p><em>Source: <a target = "_blank" href = "https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/">Good Old-Fashioned Pancakes</a></em></p>
+	</div>
+	
+	<div class = "recipe">
+    <h2 id = "recipe-3">Dumplings</h2>
+    <img src = "https://www.kasandbox.org/programming-images/food/dumplings.png" alt = "Dumplings" width = "250">
+    
+    <ul>
+        <li>Time: 15 minutes</li>
+        <li>Serves: 20 servings</li>
+    </ul>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>flour</td>
+                <td>2 cups</td>
+            </tr>
+            <tr>
+                <td>salt</td>
+                <td>1 1/2 tsp.</td>
+            </tr>
+            <tr>
+                <td>baking powder</td>
+                <td>1 tsp.</td>
+            </tr>
+            <tr>
+                <td>vegetable oil</td>
+                <td>2 tsp.</td>
+            </tr>
+            <tr>
+                <td>warm water</td>
+                <td>1 cup</td>
+            </tr>
+            <tr>
+                <td>broth</td>
+				<td>as needed</td>
+            </tr>
+            <tr>
+                <td>garnish (chopped chives <br> or parsley)</td>
+                <td>as desired</td>
+            </tr>
+			</div>
+        </tbody>
+    </table>
+    
+    <p class = "steps"><strong>Step 1: </strong>Combine flour, salt and baking powder. Add oil and water and mix until smooth. Add a bit more water until dumplings are soft and not at all dry.</p>
+    <p class = "steps"><strong>Step 2: </strong>Bring broth to a boil and add dumplings by spoonful. Reduce heat and cook dumplings 4-5 minutes. (Do in batches if you are using a small pan.)</p>
+    <p class = "steps"><strong>Step 3: </strong> Serve dumplings in broth garnished with chopped parsley or chives as desired.</p>
+    
+    <p><em>Source: <a target = "_blank" href = "https://www.tablespoon.com/recipes/easy-homemade-dumplings/b8a05d8c-3a07-4588-b78e-41fc5c0508e8">Easy Homemade Dumplings Recipe</a></em></p>
+	</div>
+    </body>
+</html>
