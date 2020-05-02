@@ -4,27 +4,10 @@
         <title>Recipe book</title>
         <meta charset="utf-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-		$(document).ready(function(){
-		  $("a").on('click', function(event) {
-			if (this.hash !== "") {
-			  event.preventDefault();
-
-			  var hash = this.hash;
-
-			  $('html, body').animate({
-				scrollTop: $(hash).offset().top
-			  }, 800, function(){
-
-				window.location.hash = hash;
-			  });
-			}
-		  });
-		});
-		</script>
         <style>
-		body{
+		html {
+			scroll-behavior: smooth;
+		body {
 			background-color: rgb(240, 247, 210);
 			color: rgb(49, 59, 48);
 			font-family: "Helvetica", sans-serif;
@@ -40,13 +23,13 @@
 			color: rgb(173, 54, 54);
 		}
 
-		.page-title{
+		.page-title {
 			margin: 20px 75px 20px 75px;
 			padding: 50px 50px 50px 50px;
 			background-color: #a5c9a5;
 		}
 
-		.content{
+		.content {
 			margin: 0px 75px 75px 75px;
 			padding: 0px 75px 50px 75px;
 			background-color: #F5F5F5;
@@ -68,11 +51,11 @@
 		    color: rgb(158, 97, 97);
 		}
 		
-		td{
+		td {
 			padding-right: 15px;
 		}
 		
-		a{
+		a {
 			text-decoration: none;
 		}
 
