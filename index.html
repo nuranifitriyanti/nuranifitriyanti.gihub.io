@@ -24,49 +24,49 @@
 		});
 		</script>
         <style>
-        body{
+		body{
 			background-color: rgb(240, 247, 210);
-            color: rgb(49, 59, 48);
+			color: rgb(49, 59, 48);
 			font-family: "Helvetica", sans-serif;
-        }
-		
-        h1{
-            color: #91465A;
+		}
+
+		h1 {
+			color: #91465A;
 			text-align: center;
 			/*rgb(181, 87, 113)*/
-        }
-		
-        h2{
-            color: rgb(173, 54, 54);
-        }
-		
+		}
+
+		h2 {
+			color: rgb(173, 54, 54);
+		}
+
 		.page-title{
 			margin: 20px 75px 20px 75px;
 			padding: 50px 50px 50px 50px;
 			background-color: #a5c9a5;
 		}
-		
+
 		.content{
 			margin: 0px 75px 75px 75px;
 			padding: 0px 75px 50px 75px;
 			background-color: #F5F5F5;
 		}
-		
+
 		.recipe {
 			padding-top: 20px;
 		}
-		
-        #recipe-1{
-            color: rgb(158, 97, 97);
-        }
-		
-        #recipe-2{
-            color: rgb(158, 97, 97);
-        }
-		
-        #recipe-3{
-            color: rgb(158, 97, 97);
-        }
+
+		#recipe-1 {
+		    color: rgb(158, 97, 97);
+		}
+
+		#recipe-2 {
+		    color: rgb(158, 97, 97);
+		}
+
+		#recipe-3 {
+		    color: rgb(158, 97, 97);
+		}
 		
 		td{
 			padding-right: 15px;
@@ -143,186 +143,225 @@
 		
 		th {
 			border-bottom: 1px solid rgb(49, 59, 48);
-		}	
+		}
+		
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: red;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+		}
+
+		#myBtn:hover {
+			background-color: #555;
+		}
 		
         </style>
     </head>
     <body>
-		<div class = "page-title">
-			<h1>Nurani's Recipe Book</h1>
-		</div>
-		
-		<div class = "navbar">
-			<a href = "#home"><strong><i class = " fa fa-home"></i> Home</strong></a>
-			<div class="dropdown">
-				<button class="dropbtn"><strong>Contents </strong> 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#recipe-1">Dalgona Coffee</a>
-					<a href="#recipe-2">Pancake</a>
-					<a href="#recipe-3">Dumplings</a>
-				</div>
-			</div> 
-		</div>
+	<div class = "page-title">
+		<h1>Nurani's Recipe Book</h1>
+	</div>
+
+	<div class = "navbar">
+		<a href = "#home"><strong><i class = " fa fa-home"></i> Home</strong></a>
+		<div class="dropdown">
+			<button class="dropbtn"><strong>Contents </strong> 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#recipe-1">Dalgona Coffee</a>
+				<a href="#recipe-2">Pancake</a>
+				<a href="#recipe-3">Dumplings</a>
+			</div>
+		</div> 
+	</div>
 
 
-		<div class = "content">
-			<div class = "recipe">
-				<h2 id="recipe-1"><br>Dalgona Coffee</h2>
-				<img src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Dalgona_coffee.jpg" alt = "Coffee" width = "250">
-				
-				<ul>
-					<li>Time: 5 mins</li>
-					<li>Serves: 1 serving</li>
-				</ul>
-				
-				<table>
-					<thead>
-						<tr>
-							<th>Ingredients</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>granulated sugar</td>
-							<td>2 tbsp.</td>
-						</tr>
-						<tr>
-							<td>instant coffee</td>
-							<td>2 tbsp.</td>
-						</tr>
-						<tr>
-							<td>cold water</td>
-							<td>2 tbsp.</td>
-						</tr>
-						<tr>
-							<td>ice</td>
-							<td>as desired</td>
-						</tr>
-						<tr>
-							<td>milk</td>
-							<td>as desired</td>
-						</tr>
-					</tbody>
-				</table>
-				
-				<p class = "steps"><strong>Step 1:</strong> In a medium bowl, combine sugar, coffee, and water. Vigorously whisk until mixture turns silky smooth and shiny, then continue whisking until it thickens and holds its lofty, foamy shape.
-		</p>
-				<p class = "steps"><strong>Step 2:</strong> Fill a glass most of the way full with ice and milk, then dollop and swirl the whipped coffee mixture on top, mixing before drinking, if desired.</p>
-				
-				
-			<p><em>Source: <a target = "_blank" href="https://www.delish.com/cooking/recipe-ideas/a32072159/dalgona-coffee-recipe/">Dalgona Coffee</a></em></p>
+	<div class = "content">
+		<div class = "recipe">
+			<h2 id="recipe-1"><br>Dalgona Coffee</h2>
+			<img src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Dalgona_coffee.jpg" alt = "Coffee" width = "250">
+
+			<ul>
+				<li>Time: 5 mins</li>
+				<li>Serves: 1 serving</li>
+			</ul>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Ingredients</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>granulated sugar</td>
+						<td>2 tbsp.</td>
+					</tr>
+					<tr>
+						<td>instant coffee</td>
+						<td>2 tbsp.</td>
+					</tr>
+					<tr>
+						<td>cold water</td>
+						<td>2 tbsp.</td>
+					</tr>
+					<tr>
+						<td>ice</td>
+						<td>as desired</td>
+					</tr>
+					<tr>
+						<td>milk</td>
+						<td>as desired</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class = "steps"><strong>Step 1:</strong> In a medium bowl, combine sugar, coffee, and water. Vigorously whisk until mixture turns silky smooth and shiny, then continue whisking until it thickens and holds its lofty, foamy shape.</p>
+			<p class = "steps"><strong>Step 2:</strong> Fill a glass most of the way full with ice and milk, then dollop and swirl the whipped coffee mixture on top, mixing before drinking, if desired.</p>
+
+
+		<p><em>Source: <a target = "_blank" href="https://www.delish.com/cooking/recipe-ideas/a32072159/dalgona-coffee-recipe/">Dalgona Coffee</a></em></p>
+	</div>
+
+		<div class = "recipe">
+			<h2 id = "recipe-2">Pancake</h2>
+			<img src = "https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt = "Pancake" width = "250">
+
+			<ul>
+				<li>Time: 20 minutes</li>
+				<li>Serves: 8 servings</li>
+			</ul>
+			<table>
+				<thead>
+					<tr>
+						<th>Ingredients</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>all-purpose flour</td>
+						<td>1 1/2 cups</td>
+					</tr>
+					<tr>
+						<td>baking powder</td>
+						<td>3 1/2 tsp.</td>
+					</tr>
+					<tr>
+						<td>salt</td>
+						<td>1 tsp.</td>
+					</tr>
+					<tr>
+						<td>white sugar</td>
+						<td>1 tbsp.</td>
+					</tr>
+					<tr>
+						<td>milk</td>
+						<td>1 1/4 cups</td>
+					</tr>
+					<tr>
+						<td>egg</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>butter; melted</td>
+						<td>3 tbsp.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class = "steps"><strong>Step 1: </strong> In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.</p>
+			<p class = "steps"><strong>Step 2: </strong>Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.</p>
+
+			<p><em>Source: <a target = "_blank" href = "https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/">Good Old-Fashioned Pancakes</a></em></p>
 		</div>
-		
-			<div class = "recipe">
-				<h2 id = "recipe-2">Pancake</h2>
-				<img src = "https://images.pexels.com/photos/357573/pexels-photo-357573.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt = "Pancake" width = "250">
-				
-				<ul>
-					<li>Time: 20 minutes</li>
-					<li>Serves: 8 servings</li>
-				</ul>
-				<table>
-					<thead>
-							<tr>
-								<th>Ingredients</th>
-								<th>Quantity</th>
-							</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>all-purpose flour</td>
-							<td>1 1/2 cups</td>
-						</tr>
-						<tr>
-							<td>baking powder</td>
-							<td>3 1/2 tsp.</td>
-						</tr>
-						<tr>
-							<td>salt</td>
-							<td>1 tsp.</td>
-						</tr>
-						<tr>
-							<td>white sugar</td>
-							<td>1 tbsp.</td>
-						</tr>
-						<tr>
-							<td>milk</td>
-							<td>1 1/4 cups</td>
-						</tr>
-						<tr>
-							<td>egg</td>
-							<td>1</td>
-						</tr>
-						<tr>
-							<td>butter; melted</td>
-							<td>3 tbsp.</td>
-						</tr>
-					</tbody>
-				</table>
-				
-				<p class = "steps"><strong>Step 1: </strong> In a large bowl, sift together the flour, baking powder, salt and sugar. Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.</p>
-				<p class = "steps"><strong>Step 2: </strong>Heat a lightly oiled griddle or frying pan over medium high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.</p>
-				
-				<p><em>Source: <a target = "_blank" href = "https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/">Good Old-Fashioned Pancakes</a></em></p>
-			</div>
-		
-			<div class = "recipe">
-				<h2 id = "recipe-3">Dumplings</h2>
-				<img src = "https://www.kasandbox.org/programming-images/food/dumplings.png" alt = "Dumplings" width = "250">
-				
-				<ul>
-					<li>Time: 15 minutes</li>
-					<li>Serves: 20 servings</li>
-				</ul>
-				
-				<table>
-					<thead>
-						<tr>
-							<th>Ingredients</th>
-							<th>Quantity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>flour</td>
-							<td>2 cups</td>
-						</tr>
-						<tr>
-							<td>salt</td>
-							<td>1 1/2 tsp.</td>
-						</tr>
-						<tr>
-							<td>baking powder</td>
-							<td>1 tsp.</td>
-						</tr>
-						<tr>
-							<td>vegetable oil</td>
-							<td>2 tsp.</td>
-						</tr>
-						<tr>
-							<td>warm water</td>
-							<td>1 cup</td>
-						</tr>
-						<tr>
-							<td>broth</td>
-							<td>as needed</td>
-						</tr>
-						<tr>
-							<td>garnish (chopped chives <br> or parsley)</td>
-							<td>as desired</td>
-						</tr>
-					</tbody>
-				</table>
-				
-				<p class = "steps"><strong>Step 1: </strong>Combine flour, salt and baking powder. Add oil and water and mix until smooth. Add a bit more water until dumplings are soft and not at all dry.</p>
-				<p class = "steps"><strong>Step 2: </strong>Bring broth to a boil and add dumplings by spoonful. Reduce heat and cook dumplings 4-5 minutes. (Do in batches if you are using a small pan.)</p>
-				<p class = "steps"><strong>Step 3: </strong> Serve dumplings in broth garnished with chopped parsley or chives as desired.</p>
-				
-				<p><em>Source: <a target = "_blank" href = "https://www.tablespoon.com/recipes/easy-homemade-dumplings/b8a05d8c-3a07-4588-b78e-41fc5c0508e8">Easy Homemade Dumplings Recipe</a></em></p>
-			</div>
+
+		<div class = "recipe">
+			<h2 id = "recipe-3">Dumplings</h2>
+			<img src = "https://www.kasandbox.org/programming-images/food/dumplings.png" alt = "Dumplings" width = "250">
+
+			<ul>
+				<li>Time: 15 minutes</li>
+				<li>Serves: 20 servings</li>
+			</ul>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Ingredients</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>flour</td>
+						<td>2 cups</td>
+					</tr>
+					<tr>
+						<td>salt</td>
+						<td>1 1/2 tsp.</td>
+					</tr>
+					<tr>
+						<td>baking powder</td>
+						<td>1 tsp.</td>
+					</tr>
+					<tr>
+						<td>vegetable oil</td>
+						<td>2 tsp.</td>
+					</tr>
+					<tr>
+						<td>warm water</td>
+						<td>1 cup</td>
+					</tr>
+					<tr>
+						<td>broth</td>
+						<td>as needed</td>
+					</tr>
+					<tr>
+						<td>garnish (chopped chives <br> or parsley)</td>
+						<td>as desired</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class = "steps"><strong>Step 1: </strong>Combine flour, salt and baking powder. Add oil and water and mix until smooth. Add a bit more water until dumplings are soft and not at all dry.</p>
+			<p class = "steps"><strong>Step 2: </strong>Bring broth to a boil and add dumplings by spoonful. Reduce heat and cook dumplings 4-5 minutes. (Do in batches if you are using a small pan.)</p>
+			<p class = "steps"><strong>Step 3: </strong> Serve dumplings in broth garnished with chopped parsley or chives as desired.</p>
+
+			<p><em>Source: <a target = "_blank" href = "https://www.tablespoon.com/recipes/easy-homemade-dumplings/b8a05d8c-3a07-4588-b78e-41fc5c0508e8">Easy Homemade Dumplings Recipe</a></em></p>
 		</div>
+	</div>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class = "fa fa-caret-up"></button>
+		<script>
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
     </body>
 </html>
